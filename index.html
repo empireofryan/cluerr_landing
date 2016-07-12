@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cluerr</title>
+		<meta name="description" content="Decorative &amp; interactive isometric &amp; 3D grids." />
+		<meta name="keywords" content="isometric, grid, images, masonry, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="demo-1">
+		<main>
+			<header class="codrops-header">
+				<h1>Cluerr</h1>
+				<p>Interactive Puzzles &amp; Scavenger Hunts.<p>
+				<nav class="codrops-demos">
+					<a class="current-demo" href="index.html">Scrollable grid</a>
+				</nav>
+
+				<button class="button-menu">
+					<svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 67.75 43.63"><rect width="67.75" height="8.38"/><rect x="4.15" y="17.63" width="59.45" height="8.38" /><rect y="35.25" width="67.75" height="8.38"/></svg>
+				</button>
+			</header>
+			<div class="isolayer isolayer--scroll1 isolayer--shadow">
+				<ul class="grid grid--effect-flip">
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
+							<img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
+							<img class="grid__img layer" src="http://www.incharente.eu/murdermystery/images/mm2.jpg" alt="01" />
+							<span class="grid__title">Murder Mystery</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/JulienLavallee">
+							<img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
+							<img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
+							<img class="grid__img layer" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/aa452220858253.562f24cc805ba.jpg" alt="021" />
+							<span class="grid__title">Julien Lavallee</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/creativemints">
+							<img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
+							<img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
+							<img class="grid__img layer" src="img/Dribbble1/3.jpg" alt="03" />
+							<span class="grid__title">Mike | Creative Mints</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/Radium">
+							<img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
+							<img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
+							<img class="grid__img layer" src="img/Dribbble1/4_2.jpg" alt="042" />
+							<span class="grid__title">Cosmin Capitanu</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
+							<img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
+							<img class="grid__img layer" src="img/Dribbble1/1_1.jpg" alt="011" />
+							<span class="grid__title">Forefathers</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/JulienLavallee">
+							<img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
+							<img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
+							<img class="grid__img layer" src="img/Dribbble1/2.jpg" alt="02" />
+							<span class="grid__title">Julien Lavallee</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</main>
+		<div class="pater">
+			<h2 class="pater__title" aria-label="PageCloud">
+				<section>
+				<form action="https://getsimpleform.com/messages?form_api_token=341fde1e81812a20c026f2fd7e85d543" method="post">
+				<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+				<input type='hidden' name='redirect_to' value='http:/www.cluerr.com/see_you_soon/' />
+				<!-- all your input fields here.... -->
+				<label style="margin-top:15px; margin-bottom:5px">Name</label><input type='text' name='test' />
+				<label style="margin-top:15px; margin-bottom:5px">Email</label><input type='text' name='email' />
+				<input style="margin-top:15px" type='submit' value='Contact' />
+				</form>
+				</section>
+			</h2>
+			<p class="pater__desc">Sign up for </p>
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/dynamics.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/animOnScroll.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			[].slice.call(document.querySelectorAll('.isolayer')).forEach(function(el) {
+				new IsoGrid(el, {
+					type : 'scrollable',
+					transform : 'translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(45deg)',
+					stackItemsAnimation : {
+						properties : function(pos) {
+							return {
+								translateZ: (pos+1) * 50,
+								rotateZ: getRandomInt(-3, 3)
+							};
+						},
+						options : function(pos, itemstotal) {
+							return {
+								type: dynamics.bezier,
+								duration: 500,
+								points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}],
+								//delay: (itemstotal-pos-1)*40
+							};
+						}
+					},
+					onGridLoaded : function() {
+						classie.add(document.body, 'grid-loaded');
+					}
+				});
+			});
+		})();
+		</script>
+	</body>
+</html>
